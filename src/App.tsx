@@ -9,7 +9,6 @@ import {
  import Nav from "./components/Nav";
 
 const Wrapper = styled.div`
-  border: solid 1px red;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +38,7 @@ function App() {
                         <Route path="*">
                             <NoMatch />
                         </Route>
-                        <Redirect exact from="/" to="tags" />
+                        <Redirect exact from="/" to="/tags" />
                     </Switch>
                 </Main>
                 <Nav />
